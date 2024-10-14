@@ -13,4 +13,7 @@ public class MessageService {
 		return messageMapper.getMessageById(id);
 	}
 
+	public void createMessage(Message message) {
+		messageMapper.insertMessage(message);
+	}
 }
